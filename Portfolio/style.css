@@ -1,0 +1,228 @@
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* ---------- NAVBAR ---------- */
+
+header {
+    background-color: #111;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    color: #00adb5;
+}
+
+
+/* ---------- SECTIONS ---------- */
+
+section {
+    min-height: 100vh;
+    padding: 100px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ---------- HOME ---------- */
+
+#home {
+    background-color: #222831;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #00adb5;
+    margin-bottom: 20px;
+}
+
+#home p {
+    max-width: 600px;
+    font-size: 18px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 25px;
+    background-color: #00adb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #008c93;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+#about {
+    background-color: white;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 25px;
+    color: #00adb5;
+}
+
+#about p {
+    font-size: 18px;
+}
+
+
+/* ---------- SKILLS ---------- */
+
+#skills {
+    background-color: #eeeeee;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background-color: #222831;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+
+/* ---------- PROJECTS ---------- */
+
+#projects {
+    background-color: white;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.project {
+    background-color: #eeeeee;
+    padding: 25px;
+    width: 300px;
+    border-radius: 8px;
+}
+
+.project h3 {
+    color: #00adb5;
+    margin-bottom: 10px;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+#contact {
+    background-color: #222831;
+    color: white;
+}
+
+#contact h2 {
+    color: #00adb5;
+}
+
+#contact a {
+    color: #00adb5;
+    text-decoration: none;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+
+    section h2 {
+        font-size: 32px;
+    }
+
+    .project {
+        width: 100%;
+    }
+}
